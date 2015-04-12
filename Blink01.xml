@@ -44,7 +44,20 @@
                   </block>
                 </value>
                 <statement name="DO0">
-                  <block type="movement_right" id="148"></block>
+                  <block type="movement_right" id="148">
+                    <next>
+                      <block type="robot_delay" id="204" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="205">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_forward" id="206"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </statement>
                 <value name="IF1">
                   <block type="logic_compare" id="136" inline="true">
@@ -62,7 +75,20 @@
                   </block>
                 </value>
                 <statement name="DO1">
-                  <block type="movement_left" id="158"></block>
+                  <block type="movement_left" id="158">
+                    <next>
+                      <block type="robot_delay" id="207" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="208">
+                            <field name="NUM">200</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_forward" id="209"></block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </statement>
                 <value name="IF2">
                   <block type="logic_compare" id="43" inline="true">
@@ -92,7 +118,7 @@
                         <field name="ACTION">FLASH</field>
                         <value name="LED">
                           <block type="math_number" id="75">
-                            <field name="NUM">0</field>
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <next>
