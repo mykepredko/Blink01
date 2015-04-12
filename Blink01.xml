@@ -253,32 +253,45 @@
                                           </block>
                                         </value>
                                         <statement name="DO">
-                                          <block type="movement_right" id="284">
+                                          <block type="movement_forward" id="321">
                                             <next>
-                                              <block type="robot_delay" id="273" inline="true">
+                                              <block type="robot_delay" id="322" inline="true">
                                                 <value name="DELAY">
-                                                  <block type="math_number" id="274">
+                                                  <block type="math_number" id="323">
                                                     <field name="NUM">200</field>
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="variables_set" id="285" inline="true">
-                                                    <field name="VAR">leftCount</field>
-                                                    <value name="VALUE">
-                                                      <block type="math_arithmetic" id="286" inline="true">
-                                                        <field name="OP">MINUS</field>
-                                                        <value name="A">
-                                                          <block type="variables_get" id="287">
+                                                  <block type="movement_right" id="284">
+                                                    <next>
+                                                      <block type="robot_delay" id="273" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="274">
+                                                            <field name="NUM">200</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="variables_set" id="285" inline="true">
                                                             <field name="VAR">leftCount</field>
+                                                            <value name="VALUE">
+                                                              <block type="math_arithmetic" id="286" inline="true">
+                                                                <field name="OP">MINUS</field>
+                                                                <value name="A">
+                                                                  <block type="variables_get" id="287">
+                                                                    <field name="VAR">leftCount</field>
+                                                                  </block>
+                                                                </value>
+                                                                <value name="B">
+                                                                  <block type="math_number" id="288">
+                                                                    <field name="NUM">1</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
                                                           </block>
-                                                        </value>
-                                                        <value name="B">
-                                                          <block type="math_number" id="288">
-                                                            <field name="NUM">1</field>
-                                                          </block>
-                                                        </value>
+                                                        </next>
                                                       </block>
-                                                    </value>
+                                                    </next>
                                                   </block>
                                                 </next>
                                               </block>
@@ -304,32 +317,45 @@
                                               </block>
                                             </value>
                                             <statement name="DO">
-                                              <block type="movement_left" id="309">
+                                              <block type="movement_forward" id="320">
                                                 <next>
-                                                  <block type="robot_delay" id="294" inline="true">
+                                                  <block type="robot_delay" id="324" inline="true">
                                                     <value name="DELAY">
-                                                      <block type="math_number" id="295">
+                                                      <block type="math_number" id="325">
                                                         <field name="NUM">200</field>
                                                       </block>
                                                     </value>
                                                     <next>
-                                                      <block type="variables_set" id="296" inline="true">
-                                                        <field name="VAR">rightCount</field>
-                                                        <value name="VALUE">
-                                                          <block type="math_arithmetic" id="297" inline="true">
-                                                            <field name="OP">MINUS</field>
-                                                            <value name="A">
-                                                              <block type="variables_get" id="298">
+                                                      <block type="movement_left" id="309">
+                                                        <next>
+                                                          <block type="robot_delay" id="294" inline="true">
+                                                            <value name="DELAY">
+                                                              <block type="math_number" id="295">
+                                                                <field name="NUM">200</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="variables_set" id="296" inline="true">
                                                                 <field name="VAR">rightCount</field>
+                                                                <value name="VALUE">
+                                                                  <block type="math_arithmetic" id="297" inline="true">
+                                                                    <field name="OP">MINUS</field>
+                                                                    <value name="A">
+                                                                      <block type="variables_get" id="298">
+                                                                        <field name="VAR">rightCount</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="299">
+                                                                        <field name="NUM">1</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
                                                               </block>
-                                                            </value>
-                                                            <value name="B">
-                                                              <block type="math_number" id="299">
-                                                                <field name="NUM">1</field>
-                                                              </block>
-                                                            </value>
+                                                            </next>
                                                           </block>
-                                                        </value>
+                                                        </next>
                                                       </block>
                                                     </next>
                                                   </block>
