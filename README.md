@@ -1,7 +1,7 @@
 Blink01
 ================
 
-Scratch: Blink LED 0
+Scratch: Find Water Using Spectrometer
 
 ### Project Information
 ```
