@@ -132,27 +132,23 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_forward" id="37" disabled="true">
-                                                                            <next>
-                                                                              <block type="variables_set" id="38" inline="true">
-                                                                                <field name="VAR">rightCount</field>
-                                                                                <value name="VALUE">
-                                                                                  <block type="math_arithmetic" id="39" inline="true">
-                                                                                    <field name="OP">ADD</field>
-                                                                                    <value name="A">
-                                                                                      <block type="variables_get" id="40">
-                                                                                        <field name="VAR">rightCount</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="B">
-                                                                                      <block type="math_number" id="41">
-                                                                                        <field name="NUM">1</field>
-                                                                                      </block>
-                                                                                    </value>
+                                                                          <block type="variables_set" id="38" inline="true">
+                                                                            <field name="VAR">rightCount</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="math_arithmetic" id="39" inline="true">
+                                                                                <field name="OP">ADD</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id="40">
+                                                                                    <field name="VAR">rightCount</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="41">
+                                                                                    <field name="NUM">1</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
-                                                                            </next>
+                                                                            </value>
                                                                           </block>
                                                                         </next>
                                                                       </block>
@@ -184,27 +180,23 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_forward" id="48" disabled="true">
-                                                                            <next>
-                                                                              <block type="variables_set" id="49" inline="true">
-                                                                                <field name="VAR">leftCount</field>
-                                                                                <value name="VALUE">
-                                                                                  <block type="math_arithmetic" id="50" inline="true">
-                                                                                    <field name="OP">ADD</field>
-                                                                                    <value name="A">
-                                                                                      <block type="variables_get" id="51">
-                                                                                        <field name="VAR">leftCount</field>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <value name="B">
-                                                                                      <block type="math_number" id="52">
-                                                                                        <field name="NUM">1</field>
-                                                                                      </block>
-                                                                                    </value>
+                                                                          <block type="variables_set" id="49" inline="true">
+                                                                            <field name="VAR">leftCount</field>
+                                                                            <value name="VALUE">
+                                                                              <block type="math_arithmetic" id="50" inline="true">
+                                                                                <field name="OP">ADD</field>
+                                                                                <value name="A">
+                                                                                  <block type="variables_get" id="51">
+                                                                                    <field name="VAR">leftCount</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <value name="B">
+                                                                                  <block type="math_number" id="52">
+                                                                                    <field name="NUM">1</field>
                                                                                   </block>
                                                                                 </value>
                                                                               </block>
-                                                                            </next>
+                                                                            </value>
                                                                           </block>
                                                                         </next>
                                                                       </block>
