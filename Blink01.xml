@@ -132,7 +132,7 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_forward" id="38">
+                                                                          <block type="movement_forward" id="38" disabled="true">
                                                                             <next>
                                                                               <block type="variables_set" id="39" inline="true">
                                                                                 <field name="VAR">rightCount</field>
@@ -184,7 +184,7 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_forward" id="49">
+                                                                          <block type="movement_forward" id="49" disabled="true">
                                                                             <next>
                                                                               <block type="variables_set" id="50" inline="true">
                                                                                 <field name="VAR">leftCount</field>
