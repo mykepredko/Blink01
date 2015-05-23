@@ -438,8 +438,8 @@
                                                                 <next>
                                                                   <block type="robot_delay" id="101" inline="true">
                                                                     <value name="DELAY">
-                                                                      <block type="math_number" id="102">
-                                                                        <field name="NUM">200</field>
+                                                                      <block type="variables_get" id="162">
+                                                                        <field name="VAR">returnForward</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
