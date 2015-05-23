@@ -290,19 +290,38 @@
                                                                         <next>
                                                                           <block type="movement_stop" id="71">
                                                                             <next>
-                                                                              <block type="controls_whileUntil" id="72" inline="false">
-                                                                                <field name="MODE">WHILE</field>
-                                                                                <value name="NUMBER">
-                                                                                  <block type="logic_compare" id="73" inline="true">
-                                                                                    <field name="OP">NEQ</field>
+                                                                              <block type="controls_repeat" id="110" inline="true">
+                                                                                <value name="TIMES">
+                                                                                  <block type="math_bitwise" id="139" inline="true">
+                                                                                    <field name="OP">OR</field>
                                                                                     <value name="A">
-                                                                                      <block type="variables_get" id="74">
-                                                                                        <field name="VAR">leftCount</field>
+                                                                                      <block type="math_arithmetic" id="118" inline="true">
+                                                                                        <field name="OP">MINUS</field>
+                                                                                        <value name="A">
+                                                                                          <block type="variables_get" id="111">
+                                                                                            <field name="VAR">leftCount</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id="99">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </block>
+                                                                                        </value>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="B">
-                                                                                      <block type="math_number" id="75">
-                                                                                        <field name="NUM">0</field>
+                                                                                      <block type="math_arithmetic" id="140" inline="true">
+                                                                                        <field name="OP">MINUS</field>
+                                                                                        <value name="A">
+                                                                                          <block type="variables_get" id="141">
+                                                                                            <field name="VAR">rightCount</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <value name="B">
+                                                                                          <block type="math_number" id="142">
+                                                                                            <field name="NUM">1</field>
+                                                                                          </block>
+                                                                                        </value>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
@@ -316,107 +335,72 @@
                                                                                             <field name="VAR">returnForward</field>
                                                                                           </block>
                                                                                         </value>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </statement>
+                                                                                <next>
+                                                                                  <block type="controls_repeat" id="109" inline="true">
+                                                                                    <value name="TIMES">
+                                                                                      <block type="variables_get" id="84">
+                                                                                        <field name="VAR">leftCount</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <statement name="DO">
+                                                                                      <block type="movement_right" id="79">
                                                                                         <next>
-                                                                                          <block type="movement_right" id="79">
+                                                                                          <block type="robot_delay" id="80" inline="true">
+                                                                                            <value name="DELAY">
+                                                                                              <block type="variables_get" id="81">
+                                                                                                <field name="VAR">objectTurn</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </statement>
+                                                                                    <next>
+                                                                                      <block type="controls_repeat" id="126" inline="true">
+                                                                                        <value name="TIMES">
+                                                                                          <block type="variables_get" id="127">
+                                                                                            <field name="VAR">rightCount</field>
+                                                                                          </block>
+                                                                                        </value>
+                                                                                        <statement name="DO">
+                                                                                          <block type="movement_left" id="93">
                                                                                             <next>
-                                                                                              <block type="robot_delay" id="80" inline="true">
+                                                                                              <block type="robot_delay" id="94" inline="true">
                                                                                                 <value name="DELAY">
-                                                                                                  <block type="variables_get" id="81">
+                                                                                                  <block type="variables_get" id="95">
                                                                                                     <field name="VAR">objectTurn</field>
                                                                                                   </block>
                                                                                                 </value>
-                                                                                                <next>
-                                                                                                  <block type="variables_set" id="82" inline="true">
-                                                                                                    <field name="VAR">leftCount</field>
-                                                                                                    <value name="VALUE">
-                                                                                                      <block type="math_arithmetic" id="83" inline="true">
-                                                                                                        <field name="OP">MINUS</field>
-                                                                                                        <value name="A">
-                                                                                                          <block type="variables_get" id="84">
-                                                                                                            <field name="VAR">leftCount</field>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                        <value name="B">
-                                                                                                          <block type="math_number" id="85">
-                                                                                                            <field name="NUM">1</field>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                      </block>
-                                                                                                    </value>
+                                                                                              </block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </statement>
+                                                                                        <next>
+                                                                                          <block type="variables_set" id="82" inline="true">
+                                                                                            <field name="VAR">leftCount</field>
+                                                                                            <value name="VALUE">
+                                                                                              <block type="math_number" id="85">
+                                                                                                <field name="NUM">0</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="variables_set" id="131" inline="true">
+                                                                                                <field name="VAR">rightCount</field>
+                                                                                                <value name="VALUE">
+                                                                                                  <block type="math_number" id="132">
+                                                                                                    <field name="NUM">0</field>
                                                                                                   </block>
-                                                                                                </next>
+                                                                                                </value>
                                                                                               </block>
                                                                                             </next>
                                                                                           </block>
                                                                                         </next>
                                                                                       </block>
                                                                                     </next>
-                                                                                  </block>
-                                                                                </statement>
-                                                                                <next>
-                                                                                  <block type="controls_whileUntil" id="86" inline="false">
-                                                                                    <field name="MODE">WHILE</field>
-                                                                                    <value name="NUMBER">
-                                                                                      <block type="logic_compare" id="87" inline="true">
-                                                                                        <field name="OP">NEQ</field>
-                                                                                        <value name="A">
-                                                                                          <block type="variables_get" id="88">
-                                                                                            <field name="VAR">rightCount</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                        <value name="B">
-                                                                                          <block type="math_number" id="89">
-                                                                                            <field name="NUM">0</field>
-                                                                                          </block>
-                                                                                        </value>
-                                                                                      </block>
-                                                                                    </value>
-                                                                                    <statement name="DO">
-                                                                                      <block type="movement_forward" id="90">
-                                                                                        <next>
-                                                                                          <block type="robot_delay" id="91" inline="true">
-                                                                                            <value name="DELAY">
-                                                                                              <block type="variables_get" id="92">
-                                                                                                <field name="VAR">returnForward</field>
-                                                                                              </block>
-                                                                                            </value>
-                                                                                            <next>
-                                                                                              <block type="movement_left" id="93">
-                                                                                                <next>
-                                                                                                  <block type="robot_delay" id="94" inline="true">
-                                                                                                    <value name="DELAY">
-                                                                                                      <block type="variables_get" id="95">
-                                                                                                        <field name="VAR">objectTurn</field>
-                                                                                                      </block>
-                                                                                                    </value>
-                                                                                                    <next>
-                                                                                                      <block type="variables_set" id="96" inline="true">
-                                                                                                        <field name="VAR">rightCount</field>
-                                                                                                        <value name="VALUE">
-                                                                                                          <block type="math_arithmetic" id="97" inline="true">
-                                                                                                            <field name="OP">MINUS</field>
-                                                                                                            <value name="A">
-                                                                                                              <block type="variables_get" id="98">
-                                                                                                                <field name="VAR">rightCount</field>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                            <value name="B">
-                                                                                                              <block type="math_number" id="99">
-                                                                                                                <field name="NUM">1</field>
-                                                                                                              </block>
-                                                                                                            </value>
-                                                                                                          </block>
-                                                                                                        </value>
-                                                                                                      </block>
-                                                                                                    </next>
-                                                                                                  </block>
-                                                                                                </next>
-                                                                                              </block>
-                                                                                            </next>
-                                                                                          </block>
-                                                                                        </next>
-                                                                                      </block>
-                                                                                    </statement>
                                                                                   </block>
                                                                                 </next>
                                                                               </block>
