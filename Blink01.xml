@@ -19,7 +19,7 @@
             <field name="VAR">objectTurn</field>
             <value name="VALUE">
               <block type="math_number" id="118">
-                <field name="NUM">300</field>
+                <field name="NUM">200</field>
               </block>
             </value>
             <next>
@@ -27,7 +27,7 @@
                 <field name="VAR">returnForward</field>
                 <value name="VALUE">
                   <block type="math_number" id="119">
-                    <field name="NUM">300</field>
+                    <field name="NUM">200</field>
                   </block>
                 </value>
                 <next>
