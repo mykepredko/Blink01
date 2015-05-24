@@ -132,18 +132,18 @@
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="variables_set" id="38" inline="true">
+                                                                          <block type="variables_set" id="37" inline="true">
                                                                             <field name="VAR">rightCount</field>
                                                                             <value name="VALUE">
-                                                                              <block type="math_arithmetic" id="39" inline="true">
+                                                                              <block type="math_arithmetic" id="38" inline="true">
                                                                                 <field name="OP">ADD</field>
                                                                                 <value name="A">
-                                                                                  <block type="variables_get" id="40">
+                                                                                  <block type="variables_get" id="39">
                                                                                     <field name="VAR">rightCount</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="B">
-                                                                                  <block type="math_number" id="41">
+                                                                                  <block type="math_number" id="40">
                                                                                     <field name="NUM">1</field>
                                                                                   </block>
                                                                                 </value>
@@ -156,42 +156,42 @@
                                                                   </block>
                                                                 </statement>
                                                                 <value name="IF1">
-                                                                  <block type="logic_compare" id="42" inline="true">
+                                                                  <block type="logic_compare" id="41" inline="true">
                                                                     <field name="OP">LT</field>
                                                                     <value name="A">
-                                                                      <block type="sensor_object" id="43">
+                                                                      <block type="sensor_object" id="42">
                                                                         <field name="OBJECT">RIGHTFRONT</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="B">
-                                                                      <block type="math_number" id="44">
+                                                                      <block type="math_number" id="43">
                                                                         <field name="NUM">70</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
                                                                 <statement name="DO1">
-                                                                  <block type="movement_left" id="45">
+                                                                  <block type="movement_left" id="44">
                                                                     <next>
-                                                                      <block type="robot_delay" id="46" inline="true">
+                                                                      <block type="robot_delay" id="45" inline="true">
                                                                         <value name="DELAY">
-                                                                          <block type="variables_get" id="47">
+                                                                          <block type="variables_get" id="46">
                                                                             <field name="VAR">objectTurn</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="variables_set" id="49" inline="true">
+                                                                          <block type="variables_set" id="47" inline="true">
                                                                             <field name="VAR">leftCount</field>
                                                                             <value name="VALUE">
-                                                                              <block type="math_arithmetic" id="50" inline="true">
+                                                                              <block type="math_arithmetic" id="48" inline="true">
                                                                                 <field name="OP">ADD</field>
                                                                                 <value name="A">
-                                                                                  <block type="variables_get" id="51">
+                                                                                  <block type="variables_get" id="49">
                                                                                     <field name="VAR">leftCount</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <value name="B">
-                                                                                  <block type="math_number" id="52">
+                                                                                  <block type="math_number" id="50">
                                                                                     <field name="NUM">1</field>
                                                                                   </block>
                                                                                 </value>
@@ -204,65 +204,65 @@
                                                                   </block>
                                                                 </statement>
                                                                 <value name="IF2">
-                                                                  <block type="logic_compare" id="53" inline="true">
+                                                                  <block type="logic_compare" id="51" inline="true">
                                                                     <field name="OP">GT</field>
                                                                     <value name="A">
-                                                                      <block type="sensor_spectrometer" id="54">
+                                                                      <block type="sensor_spectrometer" id="52">
                                                                         <field name="LIGHT">BLUE</field>
                                                                       </block>
                                                                     </value>
                                                                     <value name="B">
-                                                                      <block type="math_number" id="55">
+                                                                      <block type="math_number" id="53">
                                                                         <field name="NUM">95</field>
                                                                       </block>
                                                                     </value>
                                                                   </block>
                                                                 </value>
                                                                 <statement name="DO2">
-                                                                  <block type="led_select" id="56" inline="true">
+                                                                  <block type="led_select" id="54" inline="true">
                                                                     <field name="ACTION">FLASH</field>
                                                                     <value name="LED">
-                                                                      <block type="math_number" id="57">
+                                                                      <block type="math_number" id="55">
                                                                         <field name="NUM">0</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
-                                                                      <block type="led_select" id="58" inline="true">
+                                                                      <block type="led_select" id="56" inline="true">
                                                                         <field name="ACTION">FLASH</field>
                                                                         <value name="LED">
-                                                                          <block type="math_number" id="59">
+                                                                          <block type="math_number" id="57">
                                                                             <field name="NUM">1</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="led_select" id="60" inline="true">
+                                                                          <block type="led_select" id="58" inline="true">
                                                                             <field name="ACTION">FLASH</field>
                                                                             <value name="LED">
-                                                                              <block type="math_number" id="61">
+                                                                              <block type="math_number" id="59">
                                                                                 <field name="NUM">2</field>
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="led_select" id="62" inline="true">
+                                                                              <block type="led_select" id="60" inline="true">
                                                                                 <field name="ACTION">FLASH</field>
                                                                                 <value name="LED">
-                                                                                  <block type="math_number" id="63">
+                                                                                  <block type="math_number" id="61">
                                                                                     <field name="NUM">3</field>
                                                                                   </block>
                                                                                 </value>
                                                                                 <next>
-                                                                                  <block type="led_select" id="64" inline="true">
+                                                                                  <block type="led_select" id="62" inline="true">
                                                                                     <field name="ACTION">FLASH</field>
                                                                                     <value name="LED">
-                                                                                      <block type="math_number" id="65">
+                                                                                      <block type="math_number" id="63">
                                                                                         <field name="NUM">4</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <next>
-                                                                                      <block type="led_select" id="66" inline="true">
+                                                                                      <block type="led_select" id="64" inline="true">
                                                                                         <field name="ACTION">FLASH</field>
                                                                                         <value name="LED">
-                                                                                          <block type="math_number" id="67">
+                                                                                          <block type="math_number" id="65">
                                                                                             <field name="NUM">5</field>
                                                                                           </block>
                                                                                         </value>
@@ -279,39 +279,39 @@
                                                                   </block>
                                                                 </statement>
                                                                 <statement name="ELSE">
-                                                                  <block type="movement_forward" id="68">
+                                                                  <block type="movement_forward" id="66">
                                                                     <next>
-                                                                      <block type="robot_delay" id="69" inline="true">
+                                                                      <block type="robot_delay" id="67" inline="true">
                                                                         <value name="DELAY">
-                                                                          <block type="math_number" id="70">
+                                                                          <block type="math_number" id="68">
                                                                             <field name="NUM">200</field>
                                                                           </block>
                                                                         </value>
                                                                         <next>
-                                                                          <block type="movement_stop" id="71">
+                                                                          <block type="movement_stop" id="69">
                                                                             <next>
-                                                                              <block type="controls_repeat" id="110" inline="true">
+                                                                              <block type="controls_repeat" id="70" inline="true">
                                                                                 <value name="TIMES">
-                                                                                  <block type="math_bitwise" id="139" inline="true">
+                                                                                  <block type="math_bitwise" id="71" inline="true">
                                                                                     <field name="OP">OR</field>
                                                                                     <value name="A">
-                                                                                      <block type="variables_get" id="111">
+                                                                                      <block type="variables_get" id="72">
                                                                                         <field name="VAR">leftCount</field>
                                                                                       </block>
                                                                                     </value>
                                                                                     <value name="B">
-                                                                                      <block type="variables_get" id="141">
+                                                                                      <block type="variables_get" id="73">
                                                                                         <field name="VAR">rightCount</field>
                                                                                       </block>
                                                                                     </value>
                                                                                   </block>
                                                                                 </value>
                                                                                 <statement name="DO">
-                                                                                  <block type="movement_forward" id="76">
+                                                                                  <block type="movement_forward" id="74">
                                                                                     <next>
-                                                                                      <block type="robot_delay" id="77" inline="true">
+                                                                                      <block type="robot_delay" id="75" inline="true">
                                                                                         <value name="DELAY">
-                                                                                          <block type="variables_get" id="78">
+                                                                                          <block type="variables_get" id="76">
                                                                                             <field name="VAR">returnForward</field>
                                                                                           </block>
                                                                                         </value>
@@ -320,9 +320,9 @@
                                                                                   </block>
                                                                                 </statement>
                                                                                 <next>
-                                                                                  <block type="controls_repeat" id="109" inline="true">
+                                                                                  <block type="controls_repeat" id="77" inline="true">
                                                                                     <value name="TIMES">
-                                                                                      <block type="variables_get" id="84">
+                                                                                      <block type="variables_get" id="78">
                                                                                         <field name="VAR">leftCount</field>
                                                                                       </block>
                                                                                     </value>
@@ -340,18 +340,18 @@
                                                                                       </block>
                                                                                     </statement>
                                                                                     <next>
-                                                                                      <block type="controls_repeat" id="126" inline="true">
+                                                                                      <block type="controls_repeat" id="82" inline="true">
                                                                                         <value name="TIMES">
-                                                                                          <block type="variables_get" id="127">
+                                                                                          <block type="variables_get" id="83">
                                                                                             <field name="VAR">rightCount</field>
                                                                                           </block>
                                                                                         </value>
                                                                                         <statement name="DO">
-                                                                                          <block type="movement_left" id="93">
+                                                                                          <block type="movement_left" id="84">
                                                                                             <next>
-                                                                                              <block type="robot_delay" id="94" inline="true">
+                                                                                              <block type="robot_delay" id="85" inline="true">
                                                                                                 <value name="DELAY">
-                                                                                                  <block type="variables_get" id="95">
+                                                                                                  <block type="variables_get" id="86">
                                                                                                     <field name="VAR">objectTurn</field>
                                                                                                   </block>
                                                                                                 </value>
@@ -360,18 +360,18 @@
                                                                                           </block>
                                                                                         </statement>
                                                                                         <next>
-                                                                                          <block type="variables_set" id="82" inline="true">
+                                                                                          <block type="variables_set" id="87" inline="true">
                                                                                             <field name="VAR">leftCount</field>
                                                                                             <value name="VALUE">
-                                                                                              <block type="math_number" id="85">
+                                                                                              <block type="math_number" id="88">
                                                                                                 <field name="NUM">0</field>
                                                                                               </block>
                                                                                             </value>
                                                                                             <next>
-                                                                                              <block type="variables_set" id="131" inline="true">
+                                                                                              <block type="variables_set" id="89" inline="true">
                                                                                                 <field name="VAR">rightCount</field>
                                                                                                 <value name="VALUE">
-                                                                                                  <block type="math_number" id="132">
+                                                                                                  <block type="math_number" id="90">
                                                                                                     <field name="NUM">0</field>
                                                                                                   </block>
                                                                                                 </value>
@@ -392,14 +392,14 @@
                                                                   </block>
                                                                 </statement>
                                                                 <next>
-                                                                  <block type="robot_delay" id="100" inline="true">
+                                                                  <block type="robot_delay" id="91" inline="true">
                                                                     <value name="DELAY">
-                                                                      <block type="variables_get" id="101">
+                                                                      <block type="variables_get" id="92">
                                                                         <field name="VAR">returnForward</field>
                                                                       </block>
                                                                     </value>
                                                                     <next>
-                                                                      <block type="movement_stop" id="102"></block>
+                                                                      <block type="movement_stop" id="93"></block>
                                                                     </next>
                                                                   </block>
                                                                 </next>
